@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/api-${{ secrets.NIM }}:latest
+        tags: murfi12/api-2106119:latest
 
     - name: Deploy to Kubernetes
       uses: indiesdev/curl@v1.1
