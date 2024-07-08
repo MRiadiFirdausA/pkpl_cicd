@@ -36,3 +36,6 @@ jobs:
         method: "POST"
         headers: '{ "accept": "/" }'
         params: '{ "nim": "${{ secrets.NIM }}", "nama": "${{ secrets.NAMA }}", "docker_username": "${{ secrets.DOCKER_USERNAME }}" }'
+        log-response: true
+        retries: 3
+        timeout: 10000
